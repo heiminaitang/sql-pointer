@@ -1,4 +1,4 @@
-## sql开拓者
+# sql开拓者
 ### 首先需要下载两个需要依赖的模块
 ```
 pip install pymysql
