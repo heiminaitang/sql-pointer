@@ -17,7 +17,7 @@ class Connection:
         cursor = connection.cursor()  # 创建游标对象
         try:
             cursor.execute(sql, args)  # 执行sql语句
-            if not sql.split()[0].lower() != "select":
+            if sql.split()[0].lower() != "select":
                 connection.commit()  # 提交事务
                 result = cursor.rowcount
             else:
